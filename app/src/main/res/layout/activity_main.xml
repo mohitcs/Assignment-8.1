@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="16dp"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp"
+    android:paddingTop="16dp"
+android:background="@color/colorblack"
+    tools:context="com.example.mohit.assign_81.MainActivity">
+
+
+
+    <Button
+        android:id="@+id/btnacc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Accending!"
+
+        android:onClick="sortacc"
+        />
+
+
+    <Button
+        android:id="@+id/btndcc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Decending!"
+        android:onClick="sortdec"
+        android:layout_toRightOf="@id/btnacc"
+
+        />
+
+
+    <ListView
+        android:id="@+id/listview1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:divider="@color/colorPrimaryDark"
+        android:dividerHeight="1dp"
+        android:layout_below="@id/btndcc"
+        android:layout_marginTop="20dp"
+        android:background="@color/colorWhite"
+
+        ></ListView>
+
+</RelativeLayout>
